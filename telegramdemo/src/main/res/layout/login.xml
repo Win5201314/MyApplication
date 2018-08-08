@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/phone"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="请输入您能接收验证码的手机号" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:text="发送手机号"
+        android:textColor="#000000" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="执行了上面的操作之后，收到验证码，填写之后发送" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/sms"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="请输入短信验证码" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/sendSMS"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:text="发送验证码登录进去"
+        android:textColor="#000000" />
+
+</LinearLayout>

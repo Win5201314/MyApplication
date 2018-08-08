@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <android.support.v7.widget.AppCompatTextView
+            android:text="注册新账号并登录进去"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/zhuce"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="一键注册Telegram账号"
+            android:textColor="#000000" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="登录电报"
+            android:textColor="#000000" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/addContact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="添加通讯录好友"
+            android:textColor="#000000" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/joinGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="进群"
+            android:textColor="#000000" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/leaveGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="退群"
+            android:textColor="#000000" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/creatGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="建群"
+            android:textColor="#000000" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/contactNumberCount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="统计通讯录人数"
+            android:textColor="#000000" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/addContactToGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="拉通讯录好友进指定的群"
+            android:textColor="#000000" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
