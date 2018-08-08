@@ -18,7 +18,7 @@ public class GroupCountActivity extends AppCompatActivity implements View.OnClic
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sendtext);
+        setContentView(R.layout.groupcount);
         groupLink = findViewById(R.id.groupLink);
         send = findViewById(R.id.send);
         send.setOnClickListener(this);
