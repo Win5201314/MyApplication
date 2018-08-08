@@ -79,6 +79,22 @@
             android:background="@color/colorAccent"
             android:text="拉通讯录好友进指定的群"
             android:textColor="#000000" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sendMSG"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="对指定群发送消息"
+            android:textColor="#000000" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/GroupCount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="对指定群统计人数"
+            android:textColor="#000000" />
         <View
             android:layout_width="match_parent"
             android:layout_height="150dp"/>

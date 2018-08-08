@@ -27,6 +27,8 @@
         <activity android:name=".CreatGroupActivity"/>
         <activity android:name=".ContactNumberActivity"/>
         <activity android:name=".AddContactJoinGroup"/>
+        <activity android:name=".SendTextActivity"/>
+        <activity android:name=".GroupCountActivity"/>
     </application>
 
 </manifest>

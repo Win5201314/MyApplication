@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private AppCompatButton creatGroup;
     private AppCompatButton contactNumberCount;
     private AppCompatButton addContactToGroup;
+    private AppCompatButton sendMSG;
+    private AppCompatButton GroupCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         creatGroup = findViewById(R.id.creatGroup);
         contactNumberCount = findViewById(R.id.contactNumberCount);
         addContactToGroup = findViewById(R.id.addContactToGroup);
+        sendMSG = findViewById(R.id.sendMSG);
+        GroupCount = findViewById(R.id.GroupCount);
 
         zhuce.setOnClickListener(this);
         login.setOnClickListener(this);
@@ -40,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         creatGroup.setOnClickListener(this);
         contactNumberCount.setOnClickListener(this);
         addContactToGroup.setOnClickListener(this);
+        sendMSG.setOnClickListener(this);
+        GroupCount.setOnClickListener(this);
     }
 
     @Override
@@ -79,6 +85,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.addContactToGroup: {
                 startActivity(new Intent(this, AddContactJoinGroup.class));
+                break;
+            }
+            case R.id.sendMSG: {
+                startActivity(new Intent(this, SendTextActivity.class));
+                break;
+            }
+            case R.id.GroupCount: {
+                startActivity(new Intent(this, GroupCountActivity.class));
                 break;
             }
         }
