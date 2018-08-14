@@ -32,7 +32,7 @@ public class AddContactJoinGroup extends AppCompatActivity {
                 intent.setAction("addContactJoinGroup");
                 String name = groupName.getText().toString();
                 String count = number.getText().toString();
-                intent.putExtra("groupName", name);
+                intent.putExtra("link", name);
                 intent.putExtra("number", count);
                 //发送广播
                 sendBroadcast(intent);
