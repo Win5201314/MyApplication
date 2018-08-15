@@ -4,13 +4,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <android.support.v7.widget.AppCompatTextView
-        android:layout_margin="10dp"
-        android:textSize="13sp"
-        android:textColor="@color/colorAccent"
-        android:text="每个群只能请求一次群人数统计!\重启电报又可以再次统计"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/groupLink"
         android:layout_width="match_parent"
