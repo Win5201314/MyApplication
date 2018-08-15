@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private AppCompatButton sendMSG;
     private AppCompatButton GroupCount;
     private AppCompatButton sendPicture;
+    private AppCompatButton loginout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sendMSG = findViewById(R.id.sendMSG);
         GroupCount = findViewById(R.id.GroupCount);
         sendPicture = findViewById(R.id.sendPicture);
+        loginout = findViewById(R.id.loginout);
 
         zhuce.setOnClickListener(this);
         login.setOnClickListener(this);
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sendMSG.setOnClickListener(this);
         GroupCount.setOnClickListener(this);
         sendPicture.setOnClickListener(this);
+        loginout.setOnClickListener(this);
     }
 
     @Override
@@ -100,6 +103,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.sendPicture: {
                 startActivity(new Intent(this, SendPictureActivity.class));
+                break;
+            }
+            case R.id.loginout: {
+                startActivity(new Intent(this, LoginOutActivity.class));
                 break;
             }
         }
