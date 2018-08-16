@@ -31,6 +31,7 @@
         <activity android:name=".GroupCountActivity"/>
         <activity android:name=".SendPictureActivity"/>
         <activity android:name=".LoginOutActivity"/>
+        <activity android:name=".LaunchTelegramActivity"/>
     </application>
 
 </manifest>

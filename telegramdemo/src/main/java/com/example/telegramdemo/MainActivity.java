@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private AppCompatButton GroupCount;
     private AppCompatButton sendPicture;
     private AppCompatButton loginout;
+    private AppCompatButton luanch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         GroupCount = findViewById(R.id.GroupCount);
         sendPicture = findViewById(R.id.sendPicture);
         loginout = findViewById(R.id.loginout);
+        luanch = findViewById(R.id.luanch);
 
         zhuce.setOnClickListener(this);
         login.setOnClickListener(this);
@@ -52,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         GroupCount.setOnClickListener(this);
         sendPicture.setOnClickListener(this);
         loginout.setOnClickListener(this);
+        luanch.setOnClickListener(this);
     }
 
     @Override
@@ -107,6 +110,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.loginout: {
                 startActivity(new Intent(this, LoginOutActivity.class));
+                break;
+            }
+            case R.id.luanch: {
+                startActivity(new Intent(this, LaunchTelegramActivity.class));
                 break;
             }
         }
