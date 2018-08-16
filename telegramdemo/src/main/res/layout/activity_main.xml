@@ -117,7 +117,7 @@
             android:layout_height="50dp"
             android:layout_margin="10dp"
             android:background="@color/colorAccent"
-            android:text="启动Telegram"
+            android:text="启动和关闭Telegram"
             android:textColor="#000000" />
         <View
             android:layout_width="match_parent"
