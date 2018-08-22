@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private AppCompatButton loginout;
     private AppCompatButton luanch;
     private AppCompatButton sendGrouperMsg;
+    private AppCompatButton laqun;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         loginout = findViewById(R.id.loginout);
         luanch = findViewById(R.id.luanch);
         sendGrouperMsg = findViewById(R.id.sendGrouperMsg);
+        laqun = findViewById(R.id.laqun);
 
         zhuce.setOnClickListener(this);
         login.setOnClickListener(this);
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         loginout.setOnClickListener(this);
         luanch.setOnClickListener(this);
         sendGrouperMsg.setOnClickListener(this);
+        laqun.setOnClickListener(this);
     }
 
     @Override
@@ -121,6 +124,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.sendGrouperMsg: {
                 startActivity(new Intent(this, SendMsgToGrouper.class));
+                break;
+            }
+            case R.id.laqun: {
+                startActivity(new Intent(this, LaqunActivity.class));
                 break;
             }
         }

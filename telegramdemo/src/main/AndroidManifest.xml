@@ -33,6 +33,7 @@
         <activity android:name=".LoginOutActivity"/>
         <activity android:name=".LaunchTelegramActivity"/>
         <activity android:name=".SendMsgToGrouper"/>
+        <activity android:name=".LaqunActivity"/>
     </application>
 
 </manifest>
