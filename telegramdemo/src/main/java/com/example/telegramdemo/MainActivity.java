@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private AppCompatButton sendGrouperMsg;
     private AppCompatButton laqun;
     private AppCompatButton sendMsgToContact;
+    private AppCompatButton deleteGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sendGrouperMsg = findViewById(R.id.sendGrouperMsg);
         laqun = findViewById(R.id.laqun);
         sendMsgToContact = findViewById(R.id.sendMsgToContact);
+        deleteGroup = findViewById(R.id.deleteGroup);
 
         zhuce.setOnClickListener(this);
         login.setOnClickListener(this);
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sendGrouperMsg.setOnClickListener(this);
         laqun.setOnClickListener(this);
         sendMsgToContact.setOnClickListener(this);
+        deleteGroup.setOnClickListener(this);
     }
 
     @Override
@@ -95,6 +98,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.creatGroup: {
                 startActivity(new Intent(this, CreatGroupActivity.class));
+                break;
+            }
+            case R.id.deleteGroup: {
+                startActivity(new Intent(this, DeleteGroupActivity.class));
                 break;
             }
             case R.id.contactNumberCount: {
