@@ -10,6 +10,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="请输入建群名字" />
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/groupLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="请输入建群链接名字" />
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/creat"
         android:layout_width="match_parent"
