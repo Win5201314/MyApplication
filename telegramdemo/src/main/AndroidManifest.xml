@@ -36,6 +36,8 @@
         <activity android:name=".LaqunActivity"/>
         <activity android:name=".SendMsgTocontactActivity"/>
         <activity android:name=".DeleteGroupActivity"/>
+        <activity android:name=".SendPictureToContactActivity"/>
+        <activity android:name=".SendGrouperPictureMsgActivity"/>
     </application>
 
 </manifest>

@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private AppCompatButton laqun;
     private AppCompatButton sendMsgToContact;
     private AppCompatButton deleteGroup;
+    private AppCompatButton sendPictureToContact;
+    private AppCompatButton sendGrouperPictureMsg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         laqun = findViewById(R.id.laqun);
         sendMsgToContact = findViewById(R.id.sendMsgToContact);
         deleteGroup = findViewById(R.id.deleteGroup);
+        sendPictureToContact = findViewById(R.id.sendPictureToContact);
+        sendGrouperPictureMsg = findViewById(R.id.sendGrouperPictureMsg);
 
         zhuce.setOnClickListener(this);
         login.setOnClickListener(this);
@@ -67,6 +71,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         laqun.setOnClickListener(this);
         sendMsgToContact.setOnClickListener(this);
         deleteGroup.setOnClickListener(this);
+        sendPictureToContact.setOnClickListener(this);
+        sendGrouperPictureMsg.setOnClickListener(this);
     }
 
     @Override
@@ -142,6 +148,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.sendMsgToContact: {
                 startActivity(new Intent(this, SendMsgTocontactActivity.class));
+                break;
+            }
+            case R.id.sendPictureToContact: {
+                startActivity(new Intent(this, SendPictureToContactActivity.class));
+                break;
+            }
+            case R.id.sendGrouperPictureMsg: {
+                startActivity(new Intent(this, SendGrouperPictureMsgActivity.class));
                 break;
             }
         }
